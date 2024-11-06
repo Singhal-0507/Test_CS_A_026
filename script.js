@@ -1,29 +1,23 @@
-// Hardcoded login credentials
 const correctUsername = "user";
 const correctPassword = "password123";
 
-// Function to validate login
 function validateLogin() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
     const errorMessage = document.getElementById("errorMessage");
 
-    // Clear any previous error message
     errorMessage.textContent = "";
 
     if (username === correctUsername && password === correctPassword) {
-        // Show currency converter, hide login
         document.getElementById("loginSection").style.display = "none";
         document.getElementById("currencyConverterSection").style.display = "block";
 
-        // Load currencies once logged in
         loadCurrencies();
     } else {
         errorMessage.textContent = "Invalid username or password. Please try again.";
     }
 }
 
-// Function to load available currencies into dropdowns
 async function loadCurrencies() {
     try {
         const response = await fetch(`https://api.exchangerate-api.com/v4/latest/USD`);
@@ -52,7 +46,6 @@ async function loadCurrencies() {
     }
 }
 
-// Function to convert currency
 async function convertCurrency() {
     const amount = parseFloat(document.getElementById("amount").value);
     const fromCurrency = document.getElementById("fromCurrency").value;
