@@ -1,4 +1,3 @@
-/* Basic styling for body */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -10,7 +9,6 @@ body {
     background-image: linear-gradient(135deg, #cfd9df 0%, #e2ebf0 100%);
 }
 
-/* Container styling for both sections */
 .container {
     width: 380px;
     padding: 25px;
@@ -24,7 +22,6 @@ body {
     transform: translateY(-5px);
 }
 
-/* Title styling */
 h2 {
     font-size: 26px;
     margin-bottom: 20px;
@@ -34,7 +31,6 @@ h2 {
     text-transform: uppercase;
 }
 
-/* Styling for form groups and labels */
 .form-group {
     margin-bottom: 20px;
     text-align: left;
@@ -48,7 +44,6 @@ label {
     font-size: 14px;
 }
 
-/* Input, select, and button styling */
 input[type="text"], input[type="password"], select, button {
     width: calc(100% - 20px);
     padding: 12px;
@@ -66,7 +61,6 @@ input[type="text"]:focus, input[type="password"]:focus, select:focus {
     outline: none;
 }
 
-/* Button styling */
 button {
     background-color: #3182ce;
     color: white;
@@ -83,14 +77,13 @@ button:hover {
     box-shadow: 0 4px 8px rgba(43, 108, 176, 0.2);
 }
 
-/* Styling for messages */
 #conversionResult, #errorMessage {
     font-weight: bold;
     margin-top: 15px;
     font-size: 15px;
     padding: 10px;
     border-radius: 6px;
-    display: none; /* Hide initially */
+    display: none; 
     width: 100%;
 }
 
